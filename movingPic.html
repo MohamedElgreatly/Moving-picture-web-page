@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Moving Pictures
+    </title>
+    <style>
+        .container{
+            height: 400px;
+            width:400px;
+            border: 2px solid red;
+            
+        }
+         #img1{
+            position: absolute;
+            top:10px;
+            left:200px;
+        }
+         #img2{
+            position: absolute;
+            top:170px;
+            left:10px;
+        }
+         #img3{
+            position: absolute;
+            top:170px;
+            left: 360px;
+        }
+        .btn{
+            margin: 10px;
+        }
+        .pra{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img id="img1" src="./imgs/TOP.JPG">
+        <img id="img2" src="./imgs/icon1.gif">
+        <img id="img3" src="./imgs/icon2.gif">
+    </div>
+    <div class="btn">
+        <input type="button" value="go" onclick="go(this.value)" id="btn1">
+        <input type="button" value="reset" onclick="reset()">
+    </div>
+    <div class="pra">
+        <p id="p1"></p>
+        
+    </div>
+    <script src="./movingPic.js"></script>
+</body>
+</html>
